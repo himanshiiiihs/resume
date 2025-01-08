@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Himanshi</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        a {
+            text-decoration: none;
+            color: #26d2a7;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: #222;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 1200px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        /* Project and Skill Cards */
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            flex: 1 1 calc(45% - 2rem);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Contact Section */
+        #contact a {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Himanshi's Portfolio</h1>
+        <p>Passionate Developer | IoT Enthusiast | Data Visualizer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an MCA student passionate about software development, IoT, and data visualization.
+            With hands-on experience in the MERN stack, Arduino, Python, Tableau, and cloud integration,
+            I aim to create innovative solutions to real-world problems. My projects reflect my commitment
+            to learning, problem-solving, and applying technology effectively.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>Programming Languages</h3>
+                <p>Python, JavaScript, HTML, CSS</p>
+            </div>
+            <div class="card">
+                <h3>Frameworks & Libraries</h3>
+                <p>React, Express, Flask</p>
+            </div>
+            <div class="card">
+                <h3>Database Management</h3>
+                <p>MongoDB, SQL Server</p>
+            </div>
+            <div class="card">
+                <h3>IoT & Hardware</h3>
+                <p>Arduino, ESP32, TinkerCad, Wokwi</p>
+            </div>
+            <div class="card">
+                <h3>Data Visualization</h3>
+                <p>Tableau, Looker Studio</p>
+            </div>
+            <div class="card">
+                <h3>Tools & Platforms</h3>
+                <p>Git, Blynk Cloud, Telegram Bot</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Personal Assistant Nova</h3>
+                <p>
+                    A Python-based AI assistant capable of speech recognition, text-to-speech conversion, and API integration
+                    for tasks like weather updates, web searches, and app interactions. Developed with Flask (backend) and React (frontend).
+                </p>
+            </div>
+            <div class="card">
+                <h3>Smart Lock System</h3>
+                <p>
+                    IoT-based smart lock system using ESP32, relay, and solenoid lock. Integrated with Blynk Cloud and Telegram bot for remote access.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Sales Performance Dashboard</h3>
+                <p>
+                    Analyzed and visualized sales data using Tableau to monitor performance metrics like revenue, profit margins, and sales by region.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Smart Car Parking System</h3>
+                <p>
+                    Designed an Arduino-based system using ultrasonic sensors and LCD to detect and display available parking spots.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:himanshi@example.com">himanshi@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/himanshiiiihs" target="_blank">github.com/himanshiiiihs</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Himanshi. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
